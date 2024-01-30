@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>User</title>
+</head>
+<body>
+<p th:text="${user.getId()}">VALUE</p>
+<p th:text="${user.getName()}">VALUE</p>
+<p th:text="${user.getLastname()}">VALUE</p>
+
+<td>
+    <a th:href="'edit?id='+${user.id}">Edit</a>
+    <a th:href="'delete?id='+${user.id}">Delete</a>
+</td>
+
+</body>
+</html>
